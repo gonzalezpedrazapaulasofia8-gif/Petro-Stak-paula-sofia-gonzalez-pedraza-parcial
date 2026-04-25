@@ -1,0 +1,10 @@
+paula sofia gonzalez pedraza , algoritmos 2, 24/04/2026
+
+
+El problema de PetroStack se basa en la necesidad de gestionar eficientemente los eventos registrados durante las inspecciones técnicas realizadas por la empresa PetroStack Casanare S.A.S. en distintos municipios del departamento. Durante cada turno, las cuadrillas de campo reportan información relevante como fugas, mediciones de presión, mantenimientos y cierres de jornada.
+La característica clave de esta operación es que el evento más reciente suele ser el más importante, ya que representa la última situación detectada en campo y requiere atención inmediata por parte del supervisor. Debido a esto, la solución propuesta se fundamenta en el uso de una estructura de datos tipo pila (stack), la cual sigue el principio LIFO (Last In, First Out), donde el último elemento en ingresar es el primero en salir.
+Como desarrollador asignado, el objetivo es implementar en Java un prototipo que permita registrar (push), consultar (peek) y eliminar (pop) eventos de manera eficiente. Además, se debe incluir una funcionalidad de deshacer (undo) que permita revertir la última operación realizada, garantizando así mayor control y confiabilidad en el manejo de la información.
+
+justificacion de la pila 
+
+El uso de una pila (estructura LIFO) en el problema de PetroStack se justifica porque modela de manera natural la dinámica real de los eventos en campo. En las operaciones de inspección de pozos, el evento más reciente suele ser el más crítico, ya que refleja el estado actual del sistema (por ejemplo, una fuga o una variación de presión recién detectada). Bajo el principio LIFO (Last In, First Out), este último evento es el primero en ser atendido por el supervisor, lo cual coincide con la necesidad operativa de priorizar lo más reciente. Además, la pila facilita la implementación de funciones como reversión de acciones (undo), permitiendo deshacer cambios en el orden inverso al que se realizaron. Esto aporta control, trazabilidad y rapidez en la toma de decisiones, características esenciales en entornos industriales donde el tiempo y la precisión son críticos.
